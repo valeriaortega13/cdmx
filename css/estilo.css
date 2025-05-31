@@ -1,0 +1,130 @@
+body{
+	background-size: 100%;
+	background-color: #f0d8ed ;
+	font-size: 18px;
+	font-family: Berlin Sans FB, sans-serif;
+}
+
+header{
+	background-color: #581845 ; /*color de fondo de esta caja */
+	color: white; /*color de texto */
+	text-align: center; /*alineacion del texto centrado */
+	padding: 5px;
+	font-size: 2em;
+	width: 100%;
+	border-radius: 10px;
+}
+
+nav{
+	line-height: 30px;
+	background-color: #b058a5; /*color de fondo del nav con ese codigo hexadecimal */
+	color: white;
+	height: 600px; /*altura de la caja nav	 */
+	float: left; /*flote a la izquierda */
+	padding: 5px;
+	font-size: 1em; /*tamaño de las letter */
+	text-decoration: none;
+	margin: 20px;
+	width: 20%;
+	border-radius: 10px;
+}
+
+nav a:hover{
+	/*estoy configurando los enlaces cuando los clickeo */
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+section{
+	width: 40%;
+	float: left;
+	text-align-last: center;
+	color: #240220;
+	text-align: justify;
+	font-size: 1em;
+	padding: 0px 0px 0px 0px;
+}
+
+footer
+{
+	background-color: dodgerblue;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+}
+img{
+	display: block;
+	margin: auto;
+	clear: right;
+	text-align: right;
+
+
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+main .fondo{
+	text-align: justify;
+	width: 40%;
+}
+main .fondo img{
+	max-width: 40%;
+	height: auto;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+	flex-direction: row;
+}
+main .fondo img:hover{
+	//que cuando le paso el mouse por encima a las img
+	transform: scale(1.05);
+
+}
+
+@media  (max-width: 600px) {
+	body{
+		background-color: #872332;
+		
+	}
+
+	nav{
+		line-height: 30px;
+		background-color: #bd3247  ; /*color de fondo del nav con ese codigo hexadecimal */
+		color: pink;
+		height: 400px; /*altura de la caja nav	 */
+		float: left; /*flote a la izquierda */
+		padding: 5px;
+		font-size: 0.5em; /*tamaño de las letter */
+		text-decoration: none;
+		margin: 20px;
+		width: 20%;
+	}
+
+	main .fondo{
+		text-align: left;
+		width: 20%;
+		flex-direction: column;
+		font-size: 0.5em;
+
+	}
+	main .fondo img{
+		width: 60%;
+		height: auto;
+		
+	}
+	
+
+	header{
+		font-size: 1em;
+		background-color: #480a13 ;
+	}
+
+	footer {
+		font-size: 0.6em;
+
+	}
+
+}
